@@ -229,9 +229,9 @@
 @media (max-width: 500px){
   .homeContainer {
     display: flex;
-    height: 185%;
-    width: 100%;
+    height: 250%;
     background-color: #000;
+    overflow: hidden;
   }
 
   .leftSection{
@@ -249,6 +249,7 @@
   .notificationWrapper {
     width: 100%;
     margin-top: 2rem;
+    margin-left: -2rem;
   }
 
   .whales {

@@ -1,0 +1,317 @@
+.homeContainer {
+  display: flex;
+  height: 155%;
+  width: 100%;
+  background-color: #000;
+}
+
+.leftSection {
+  width: 60%;
+  height: 100%;
+  background: url("../../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+}
+
+.rightSection {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12),
+    0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoCard {
+  width: 40%;
+}
+
+.notificationWrapper {
+  width: 45%;
+}
+
+.infoTitle {
+  color: #f2f2f2;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 1.9rem;
+  line-height: 40px;
+}
+
+.infoDesc {
+  color: #f2f2f2;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 20px;
+}
+
+.whales {
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+  justify-content: space-between;
+}
+
+.whalesImgContainer {
+  width: 50%;
+  position: relative;
+}
+
+.whaleImg {
+  object-fit: contain;
+  position: relative;
+  top: -3%;
+  left: -7%;
+  transform: scale(1.2);
+}
+
+.rightAlign {
+  margin-top: -5rem;
+  text-align: right;
+}
+
+.testimonials {
+  width: 100%;
+}
+
+.testimonialHeader {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(229, 229, 230, 0.5);
+}
+
+.testimonialHeader > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: right;
+  color: #f2f2f2;
+}
+
+.cardsWrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+
+.cardsContainer {
+  width: 87%;
+}
+
+.emailForm {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formHeading {
+  color: #b0b1b3;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.formInput {
+  margin-top: 2rem;
+  background: #ffffff;
+  border: 1px solid #e5e5e6;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04), 0px 1px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  width: 80%;
+  height: 60px;
+  cursor: pointer;
+}
+
+.formInput:hover {
+  border: 1px solid #000;
+}
+
+.formCta {
+  margin-top: 1.5rem;
+  background: #19191a;
+  border: 1px solid #19191a;
+  border-radius: 8px;
+  width: 80%;
+  height: 60px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.errorMessage {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: red;
+}
+
+.formMessage {
+  margin-top: 2.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media(max-width: 1440px){
+  .homeContainer {
+    height: 130%;
+  }
+
+  .leftSection {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .homeContainer {
+    height: 170%;
+  }
+
+  .infoTitle {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .infoDesc {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+
+  .whaleImg {
+    top: -3%;
+    left: -13%;
+    transform: scale(1.1);
+  }
+
+  .emailForm {
+    width: 75%;
+  }
+
+  .formHeading {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .homeContainer{
+    flex-direction: column;
+  }
+
+  .leftSection {
+    width: 100%;
+  }
+
+  .rightSection {
+    width: 100%;
+  }
+
+  .emailForm {
+    width: 53%;
+  }
+
+  .formHeading {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 500px){
+  .homeContainer {
+    display: flex;
+    height: 185%;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .leftSection{
+    padding: 2rem 1rem;
+  }
+
+  .notifications {
+    flex-direction: column;
+  }
+
+  .infoCard {
+    width: 80%;
+  }
+
+  .notificationWrapper {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .whales {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .whalesImgContainer {
+    width: 100%;
+    margin-top: -2rem;
+  }
+
+  .whaleImg {
+    object-fit: contain;
+    position: relative;
+    top: -3%;
+    left: -20%;
+    transform: scale(0.95);
+  }
+
+  .rightAlign {
+    margin-top: -3rem;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .testimonials {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .testimonialHeader > h3 {
+    text-align: left;
+  }
+
+  .cardsWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardsContainer {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .emailForm {
+    height: 60vh;
+    width: 80%;
+  }
+
+  .formHeading {
+    font-size: 1.7rem;
+  }
+
+  .formInput {
+    height: 40px;
+  }
+
+  .formCta {
+    height: 40px;
+  }
+
+  .formMessage {
+    font-size: 0.9rem;
+  }
+}

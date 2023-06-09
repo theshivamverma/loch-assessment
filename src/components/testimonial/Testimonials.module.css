@@ -1,0 +1,45 @@
+.carouselContainer{
+  display: flex;
+  align-items: flex-end;
+}
+
+.carouselCard {
+  cursor: pointer;
+  margin: 0 10px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04), 0px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+}
+
+.cardName {
+  color: #19191A;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.cardDesignation {
+  font-size: 0.8rem;
+  color: #96979A;
+}
+
+.cardReview {
+  color: #1d2129;
+  margin-top: 1.3rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px){
+  .cardReview {
+    font-size: 0.8rem;
+  }
+}
